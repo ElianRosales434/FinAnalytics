@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinAnalytics - Vista Previa No Funcional (Layout Wireframe)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .table-number { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 antialiased">
+
+  <!-- Top Sticky Non-Functional Prototype Disclaimer Banner -->
+  <div class="bg-amber-500 text-slate-950 font-bold px-4 py-2 text-xs text-center border-b border-amber-600 shadow-sm sticky top-0 z-50 flex items-center justify-center gap-2">
+    <span class="w-2.5 h-2.5 rounded-full bg-slate-950 animate-ping"></span>
+    <span>VISTA PREVIA NO FUNCIONAL • MAQUETA DE DISEÑO / WIREFRAME DEL PROYECTO FINANALYTICS</span>
+    <span class="text-[11px] font-normal hidden md:inline text-amber-950">— Universidad del Valle de Guatemala (Campus Sololá) • Cátedra: Licda. Gloria León</span>
+  </div>
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar Mockup -->
+    <aside class="w-72 bg-slate-900 text-white flex flex-col shrink-0 border-r border-slate-800 p-5 select-none hidden lg:flex">
+      <div class="flex items-center gap-3 pb-5 border-b border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-lg">
+          FA
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-bold text-white text-base">FinAnalytics</span>
+            <span class="text-[9px] uppercase px-1 rounded bg-amber-400/20 text-amber-300 font-bold border border-amber-400/30">MOCKUP</span>
+          </div>
+          <span className="text-[11px] text-slate-400 block">Sistemas Informáticos</span>
+        </div>
+      </div>
+
+      <div class="mt-4 p-2.5 rounded-lg bg-slate-800/80 border border-slate-700 text-xs text-slate-300">
+        <span class="text-amber-400 font-bold block mb-0.5">Sprint 0 / 1 — Planificación</span>
+        <span class="text-[11px] text-slate-400">Diseño y maqueta visual del layout. Sin procesamiento funcional.</span>
+      </div>
+
+      <!-- Navigation links mockup -->
+      <nav class="mt-6 space-y-1 text-xs">
+        <a href="#modulo-dashboard" class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-blue-600 text-white font-bold">
+          <span>0. Resumen Ejecutivo</span>
+          <span class="text-[9px] bg-white/20 px-1.5 py-0.5 rounded">KPIs</span>
+        </a>
+        <a href="#modulo-datos" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>1. Ingreso de Datos (9.1)</span>
+          <span class="text-[9px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">Formulario</span>
+        </a>
+        <a href="#modulo-estados" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>2. Estados Financieros (9.2)</span>
+          <span class="text-[9px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">Didáctico</span>
+        </a>
+        <a href="#modulo-ratios" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>3. Razones Financieras (9.3)</span>
+          <span class="text-[9px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">11 Ratios</span>
+        </a>
+        <a href="#modulo-inversion" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>4. Evaluación Inversión (9.4)</span>
+          <span class="text-[9px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">VPN / TIR</span>
+        </a>
+        <a href="#modulo-reportes" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>5. Módulo de Reportes (9.5)</span>
+          <span class="text-[9px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">PDF / Excel</span>
+        </a>
+        <a href="#modulo-scrum" class="flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800">
+          <span>6. Metodología Scrum</span>
+          <span class="text-[9px] bg-purple-900/50 text-purple-300 px-1.5 py-0.5 rounded">18 HUs</span>
+        </a>
+      </nav>
+
+      <!-- Team Box -->
+      <div class="mt-auto pt-4 border-t border-slate-800 text-[11px] text-slate-400">
+        <div class="font-bold text-white text-xs mb-1">Equipo FinAnalytics:</div>
+        <div>• Natán Saquic (PO / Backend)</div>
+        <div>• Danilo Bulux (SM / Frontend)</div>
+        <div>• Alexis Rosales (Dev / Reportes)</div>
+        <div>• Elian Rosales (Dev / QA y Datos)</div>
+        <div class="mt-2 text-slate-500 font-mono text-[10px]">Entrega: 7 nov 2026</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area: Continuous Mockup Layout -->
+    <main class="flex-1 p-6 sm:p-10 max-w-6xl mx-auto space-y-12">
+      
+      <!-- HEADER INFO -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-bold text-blue-700 uppercase tracking-wider">Universidad del Valle de Guatemala • Sololá</span>
+          <h1 class="text-2xl font-black text-slate-900 mt-0.5">FinAnalytics — Maqueta Visual del Layout</h1>
+          <p class="text-xs text-slate-500 mt-1">
+            Prototipo estático no funcional para revisión de arquitectura visual y diseño de interfaz (UI/UX).
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5 text-xs">
+          <div class="px-3 py-1.5 rounded-xl bg-slate-100 border border-slate-200 font-bold text-slate-700">
+            Empresa: Calzados y Textiles del Altiplano, S.A.
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-slate-100 border border-slate-200 font-bold text-slate-700">
+            Moneda: Q (GTQ)
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 0: DASHBOARD / KPIS -->
+      <section id="modulo-dashboard" class="space-y-4">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-white">Sección 0</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta del Dashboard y KPIs Principales</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold text-slate-500 uppercase">Inversión Inicial (I₀)</span>
+            <div class="text-2xl font-black text-slate-900 mt-2">Q 150,000</div>
+            <span class="text-[11px] text-slate-500 block mt-1">WACC: 12.0% exigido</span>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold text-slate-500 uppercase">Valor Presente Neto (VPN)</span>
+            <div class="text-2xl font-black text-emerald-600 mt-2">+Q 148,924.18</div>
+            <span class="text-[11px] text-emerald-700 font-bold block mt-1">VPN &gt; 0 • Proyecto Viable</span>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold text-slate-500 uppercase">Tasa Interna Retorno (TIR)</span>
+            <div class="text-2xl font-black text-purple-700 mt-2">39.80%</div>
+            <span class="text-[11px] text-purple-700 font-semibold block mt-1">Supera corte del 12%</span>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <span class="text-xs font-bold text-slate-500 uppercase">Recuperación (Payback)</span>
+            <div class="text-2xl font-black text-amber-700 mt-2">2.3 Años</div>
+            <span class="text-[11px] text-slate-500 block mt-1">Retorno dentro del Año 3</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 1: INGRESO DE DATOS (9.1) -->
+      <section id="modulo-datos" class="space-y-4 pt-4 border-t-2 border-dashed border-slate-300">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-600 text-white">Módulo 9.1</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta del Formulario de Ingreso de Datos (Campos No Editables)</h2>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+          <div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 font-semibold">
+            Nota de maqueta: Todos los campos a continuación son representativos de la interfaz visual. No se procesan ni modifican datos.
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div>
+              <label class="font-bold text-slate-700 block mb-1">Nombre de la Empresa</label>
+              <input type="text" disabled value="Calzados y Textiles del Altiplano, S.A." class="w-full px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-slate-700 font-medium cursor-not-allowed">
+            </div>
+            <div>
+              <label class="font-bold text-slate-700 block mb-1">NIT</label>
+              <input type="text" disabled value="8492019-3" class="w-full px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-slate-700 font-medium cursor-not-allowed">
+            </div>
+            <div>
+              <label class="font-bold text-slate-700 block mb-1">Sector Económico</label>
+              <input type="text" disabled value="Manufactura (Preset HU-02)" class="w-full px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-slate-700 font-medium cursor-not-allowed">
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100">
+            <span class="font-bold text-xs text-slate-800 block mb-2">Proyección de Ventas (Años 1 a 5) en Quetzales:</span>
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-xs">
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-[10px] text-slate-500 font-bold block">Año 1</span>
+                <span class="font-bold text-slate-900">Q 320,000</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-[10px] text-slate-500 font-bold block">Año 2</span>
+                <span class="font-bold text-slate-900">Q 380,000</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-[10px] text-slate-500 font-bold block">Año 3</span>
+                <span class="font-bold text-slate-900">Q 450,000</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-[10px] text-slate-500 font-bold block">Año 4</span>
+                <span class="font-bold text-slate-900">Q 520,000</span>
+              </div>
+              <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-[10px] text-slate-500 font-bold block">Año 5</span>
+                <span class="font-bold text-slate-900">Q 600,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: ESTADOS FINANCIEROS (9.2) -->
+      <section id="modulo-estados" class="space-y-4 pt-4 border-t-2 border-dashed border-slate-300">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-600 text-white">Módulo 9.2</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta del Estado de Resultados con Fórmulas Visibles</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto text-xs">
+          <table class="w-full text-left">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 text-[11px]">
+                <th class="p-3">Cuenta Contable</th>
+                <th class="p-3 text-amber-800 bg-amber-50">Fórmula / Criterio Académico (UVG)</th>
+                <th class="p-3 text-right">Año 1</th>
+                <th class="p-3 text-right">Año 2</th>
+                <th class="p-3 text-right">Año 3</th>
+                <th class="p-3 text-right">Año 4</th>
+                <th class="p-3 text-right">Año 5</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold">Ventas Netas</td>
+                <td class="p-3 bg-amber-50/50 font-mono text-[11px] text-amber-900">Precio Unitario × Volumen</td>
+                <td class="p-3 text-right font-medium">Q 320,000</td>
+                <td class="p-3 text-right font-medium">Q 380,000</td>
+                <td class="p-3 text-right font-medium">Q 450,000</td>
+                <td class="p-3 text-right font-medium">Q 520,000</td>
+                <td class="p-3 text-right font-medium">Q 600,000</td>
+              </tr>
+              <tr>
+                <td class="p-3">(-) Costo de Ventas (55%)</td>
+                <td class="p-3 bg-amber-50/50 font-mono text-[11px] text-amber-900">Materia prima + Mano de obra</td>
+                <td class="p-3 text-right text-rose-600">-Q 176,000</td>
+                <td class="p-3 text-right text-rose-600">-Q 209,000</td>
+                <td class="p-3 text-right text-rose-600">-Q 247,500</td>
+                <td class="p-3 text-right text-rose-600">-Q 286,000</td>
+                <td class="p-3 text-right text-rose-600">-Q 330,000</td>
+              </tr>
+              <tr class="bg-slate-50 font-bold">
+                <td class="p-3">(=) Utilidad Bruta</td>
+                <td class="p-3 bg-amber-50/50 font-mono text-[11px] text-amber-900">Ventas - Costo de Ventas</td>
+                <td class="p-3 text-right">Q 144,000</td>
+                <td class="p-3 text-right">Q 171,000</td>
+                <td class="p-3 text-right">Q 202,500</td>
+                <td class="p-3 text-right">Q 234,000</td>
+                <td class="p-3 text-right">Q 270,000</td>
+              </tr>
+              <tr class="bg-emerald-50 text-emerald-950 font-black border-t-2 border-emerald-300">
+                <td class="p-3">(=) Utilidad Neta del Ejercicio</td>
+                <td class="p-3 bg-amber-50/50 font-mono text-[11px] text-amber-900">EBT - ISR (25%)</td>
+                <td class="p-3 text-right">Q 39,750</td>
+                <td class="p-3 text-right">Q 55,875</td>
+                <td class="p-3 text-right">Q 74,625</td>
+                <td class="p-3 text-right">Q 93,600</td>
+                <td class="p-3 text-right">Q 116,625</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: RAZONES FINANCIERAS (9.3) -->
+      <section id="modulo-ratios" class="space-y-4 pt-4 border-t-2 border-dashed border-slate-300">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-600 text-white">Módulo 9.3</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta del Dashboard de Razones Financieras (3 Grupos)</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Liquidez -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-800">1. Liquidez</span>
+            <div class="font-black text-slate-900 text-base">Razón Corriente</div>
+            <div class="text-3xl font-black text-slate-900">1.85 veces</div>
+            <div class="text-[11px] text-slate-500 font-mono">Fórmula: Activo C. ÷ Pasivo C.</div>
+            <div class="p-2.5 bg-emerald-50 rounded-xl text-[11px] text-emerald-900 leading-snug border border-emerald-100">
+              <strong>Interpretación:</strong> Q1.85 de activos disponibles por cada Quetzal de deuda urgente.
+            </div>
+          </div>
+
+          <!-- Rentabilidad -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-800">2. Rentabilidad</span>
+            <div class="font-black text-slate-900 text-base">Margen Neto</div>
+            <div class="text-3xl font-black text-slate-900">12.4%</div>
+            <div class="text-[11px] text-slate-500 font-mono">Fórmula: Utilidad Neta ÷ Ventas</div>
+            <div class="p-2.5 bg-emerald-50 rounded-xl text-[11px] text-emerald-900 leading-snug border border-emerald-100">
+              <strong>Interpretación:</strong> 12.4 centavos de cada Quetzal facturado se convierten en beneficio neto.
+            </div>
+          </div>
+
+          <!-- Endeudamiento -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-800">3. Endeudamiento</span>
+            <div class="font-black text-slate-900 text-base">Nivel de Deuda</div>
+            <div class="text-3xl font-black text-slate-900">38.5%</div>
+            <div class="text-[11px] text-slate-500 font-mono">Fórmula: Pasivo T. ÷ Activo T.</div>
+            <div class="p-2.5 bg-blue-50 rounded-xl text-[11px] text-blue-900 leading-snug border border-blue-100">
+              <strong>Interpretación:</strong> Nivel prudente de financiamiento externo por debajo del 50%.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: EVALUACIÓN DE INVERSIÓN (9.4) -->
+      <section id="modulo-inversion" class="space-y-4 pt-4 border-t-2 border-dashed border-slate-300">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-600 text-white">Módulo 9.4</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta de Comparación de Escenarios de Inversión</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden text-xs">
+          <table class="w-full text-left">
+            <thead class="bg-slate-100 text-slate-700 font-bold uppercase text-[11px] border-b border-slate-200">
+              <tr>
+                <th class="p-3">Escenario</th>
+                <th class="p-3">Premisa Comercial</th>
+                <th class="p-3 text-right">VPN Estimado</th>
+                <th class="p-3 text-right">TIR</th>
+                <th class="p-3 text-center">Recuperación</th>
+                <th class="p-3 text-center">Decisión</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr class="bg-blue-50/40 font-semibold">
+                <td class="p-3 font-bold">Escenario Base</td>
+                <td class="p-3 text-slate-600">Crecimiento moderado del 15% anual</td>
+                <td class="p-3 text-right font-black text-emerald-700">+Q 148,924.18</td>
+                <td class="p-3 text-right font-black text-purple-700">39.8%</td>
+                <td class="p-3 text-center">2.3 años</td>
+                <td class="p-3 text-center"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full font-bold">Viable</span></td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">Escenario Optimista</td>
+                <td class="p-3 text-slate-600">+15% ventas y mayor adopción</td>
+                <td class="p-3 text-right font-black text-emerald-700">+Q 218,450.60</td>
+                <td class="p-3 text-right font-black text-purple-700">52.4%</td>
+                <td class="p-3 text-center">1.8 años</td>
+                <td class="p-3 text-center"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full font-bold">Altamente Rentable</span></td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold">Escenario Pesimista</td>
+                <td class="p-3 text-slate-600">-20% ventas ante contracción</td>
+                <td class="p-3 text-right font-black text-emerald-700">+Q 42,180.12</td>
+                <td class="p-3 text-right font-black text-purple-700">19.6%</td>
+                <td class="p-3 text-center">3.5 años</td>
+                <td class="p-3 text-center"><span class="px-2 py-0.5 bg-amber-100 text-amber-800 rounded-full font-bold">Aceptable</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: REPORTES Y SCRUM -->
+      <section id="modulo-reportes" class="space-y-4 pt-4 border-t-2 border-dashed border-slate-300">
+        <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-700 text-white">Sección 5 y 6</span>
+          <h2 class="text-lg font-extrabold text-slate-900">Maqueta del Informe Ejecutivo y Marco Scrum</h2>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 text-xs">
+          <div class="border-b border-slate-200 pb-3">
+            <h3 class="font-extrabold text-slate-900 text-sm">Resumen Ejecutivo y Dictamen del Analista</h3>
+            <p class="text-slate-600 mt-1 leading-relaxed">
+              El proyecto de inversión evaluado presenta condiciones financieras altamente favorables: el Valor Presente Neto supera cero y la TIR del 39.8% supera la tasa exigida del 12.0%. Se recomienda proceder con la adquisición de la maquinaria de Q 150,000.
+            </p>
+          </div>
+
+          <div class="pt-2 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <span class="text-[10px] text-slate-400 block font-bold">Product Owner</span>
+              <span class="font-bold text-slate-900">Natán Saquic</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <span class="text-[10px] text-slate-400 block font-bold">Scrum Master</span>
+              <span class="font-bold text-slate-900">Danilo Bulux</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <span class="text-[10px] text-slate-400 block font-bold">Reportes</span>
+              <span class="font-bold text-slate-900">Alexis Rosales</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <span class="text-[10px] text-slate-400 block font-bold">QA y Datos</span>
+              <span class="font-bold text-slate-900">Elian Rosales</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Info -->
+      <footer class="pt-6 border-t border-slate-200 text-center text-xs text-slate-500">
+        FinAnalytics • Universidad del Valle de Guatemala (Campus Sololá) • Licda. Gloria León • Fecha de entrega: 7 de noviembre de 2026
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
